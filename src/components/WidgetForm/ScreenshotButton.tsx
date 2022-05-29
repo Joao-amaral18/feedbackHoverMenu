@@ -31,15 +31,14 @@ export function ScreenshotButton({
         style={{
           backgroundImage: `url(${screenshot})`,
           backgroundPosition: "right bottom",
-          backgroundSize: 300
+          backgroundSize: 300,
         }}
-        onClick={()=>onScreenshotTook(null)}
+        onClick={() => onScreenshotTook(null)}
       >
         <Trash weight="fill" />
       </button>
     );
   } else {
-
     return (
       <button
         onClick={handleTakeScreenshot}
